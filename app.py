@@ -7,7 +7,7 @@ st.set_page_config(page_title="Fetal Health Classifier", layout="wide")
 st.title("Fetal Health Classifier (Random Forest)")
 
 model = joblib.load("fetal_rf_model.pkl")
-feature_cols = joblib.load("feature_columns.pkl")
+feature_cols = joblib.load("feature_columns (1).pkl")
 df_ref = pd.read_csv("fetal health.csv.zip").drop(columns=["fetal_health"])
 
 st.subheader("Enter Feature Values")
